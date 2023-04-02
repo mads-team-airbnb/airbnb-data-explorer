@@ -1,4 +1,4 @@
-# Team AirBnb App
+# Airbnb Data Explorer
 
 This is a Streamlit app that allows users to explore Airbnb data for four cities: Austin, Chicago, Nashville, and Portland.
 
