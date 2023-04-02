@@ -9,8 +9,8 @@ The app has three pages: "Explore Airbnb Data", "Visualize Each City", and "List
 To get started, you can clone this repository and install the required dependencies by running the following commands:
 
 ```
-git clone https://github.com/yourusername/airbnb-streamlit-app.git
-cd airbnb-streamlit-app
+git clone https://github.com/mads-team-airbnb/airbnb-data-explorer
+cd airbnb-data-explorer
 pip install -r requirements.txt
 ```
 
