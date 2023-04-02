@@ -17,7 +17,7 @@ pip install -r requirements.txt
 Once you have installed the dependencies, you can launch the app by running the following command:
 
 ```
-streamlit run app.py
+streamlit run main.py
 ```
 
 This will launch the app in your default web browser.
