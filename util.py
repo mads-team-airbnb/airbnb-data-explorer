@@ -2,9 +2,22 @@ import locale
 import streamlit as st
 import pandas as pd
 import uuid
+import boto3
+import gzip
+import io
 
 
-@st.cache_data
+s3 = boto3.client('s3')
+
+bucket_name = 'mads-team-airbnb-s3'
+
+
+def read_csv(path: str):
+    obj = s3.get_object(Bucket=bucket_name, Key=path)
+    return pd.read_csv(obj.get('Body'), compression='gzip', low_memory=False)
+
+
+@ st.cache_data
 def convert_df(df: pd.DataFrame) -> str:
     return df.to_csv(index=False).encode('utf-8')
 

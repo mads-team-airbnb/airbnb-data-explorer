@@ -2,7 +2,7 @@ from collections import Counter
 import streamlit as st
 import pandas as pd
 from streamlit_echarts import st_echarts
-from util import convert_df, currency_to_num, stop_words
+from util import convert_df, currency_to_num, read_csv, stop_words
 import numpy as np
 import re
 import uuid
@@ -135,11 +135,11 @@ def visualize_map(df):
 
 @ st.cache_data
 def read_data(city: str):
-    listings = pd.read_csv(f'data/listings_{city}.csv.gz')
+    listings = read_csv(f'data/listings_{city}.csv.gz')
     listings['price_num'] = listings['price'].apply(currency_to_num)
 
-    reviews = pd.read_csv(f'data/reviews_{city}.csv.gz')
-    calendar = pd.read_csv(f'data/calendar_{city}.csv.gz')
+    reviews = read_csv(f'data/reviews_{city}.csv.gz')
+    calendar = read_csv(f'data/calendar_{city}.csv.gz')
     calendar = calendar.dropna()
 
     calendar['price_num'] = calendar['price'].apply(currency_to_num)

@@ -2,22 +2,22 @@ import pandas as pd
 import streamlit as st
 import uuid
 
-from util import convert_df
+from util import convert_df, read_csv
 
 
 @st.cache_data
 def get_listings():
-    return pd.read_csv('data/listings_austin.csv.gz')
+    return read_csv('data/listings_austin.csv.gz')
 
 
 @st.cache_data
 def get_reviews():
-    return pd.read_csv('data/reviews_austin.csv.gz')
+    return read_csv('data/reviews_austin.csv.gz')
 
 
 @st.cache_data
 def get_calendar():
-    return pd.read_csv('data/calendar_austin.csv.gz')
+    return read_csv('data/calendar_austin.csv.gz')
 
 
 austing_listings = get_listings()
