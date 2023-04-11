@@ -4,3 +4,5 @@ __pycache__/
 .vscode/
 data/
 *.ipynb
+city_lat_long_coordinates.csv
+listings.csv
