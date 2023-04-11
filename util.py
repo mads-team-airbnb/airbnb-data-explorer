@@ -26,6 +26,7 @@ locale.setlocale(locale.LC_ALL, '')
 
 
 def currency_to_num(currency):
+    currency = currency.replace(',', '')
     return locale.atof(currency.strip('$'))
 
 
