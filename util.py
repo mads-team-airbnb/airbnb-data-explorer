@@ -1,10 +1,7 @@
 import locale
 import streamlit as st
 import pandas as pd
-import uuid
 import boto3
-import gzip
-import io
 
 
 s3 = boto3.client('s3')

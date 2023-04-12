@@ -17,11 +17,11 @@ room_types = ('Entire home/apt', 'Private room', 'Shared room')
 
 def listing_predictor():
     st.markdown('## Listing Predictor')
-    st.write("Our rental property price predictor is a simple and user-friendly tool that estimates the price of a rental property based on its features. By entering information such as the number of bedrooms, bathrooms, and distance from the city, our machine learning model can predict a price for you. ")
-    st.write("Whether you're a renter looking for a new home or a landlord trying to set the right price for your property, our tool can help you make informed decisions. Give it a try and get a quick estimate of how much your dream rental property might cost!")
+    st.write("Our rental property price predictor is a tool that uses machine learning to estimate the price of a rental property based on its features. By inputting information such as the number of bedrooms, bathrooms, and distance from the city, our model can generate a price prediction for rental properties in Austin, Texas.")
+    st.write("Whether you're a renter searching for a new home or a property owner looking to set the right rental price, our tool can help you make data-driven decisions. Our rental property price predictor is designed to provide valuable insights into the Austin rental market, enabling users to optimize their rental strategy and maximize their return on investment.")
 
     address = st.text_input(
-        "Address", placeholder="123 Main St, Anytown, CA, USA")
+        "Address", placeholder="123 Main St, Austin, TX, USA")
     geolocator = Nominatim(user_agent="my_app")
 
     col1, col2, col3 = st.columns(3)
