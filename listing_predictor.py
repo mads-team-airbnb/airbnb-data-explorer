@@ -1,13 +1,13 @@
 import pandas as pd
 import streamlit as st
-import joblib
 from geopy.geocoders import Nominatim
 import numpy as np
+from util import read_model
 
 
 @st.cache_data
 def get_model():
-    return joblib.load('models/rf_reg_model.joblib')
+    return read_model('models/rf_reg_model.joblib')
 
 
 model = get_model()
