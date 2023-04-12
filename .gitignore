@@ -7,3 +7,4 @@ data/
 city_lat_long_coordinates.csv
 listings.csv
 .DS_Store
+models/
