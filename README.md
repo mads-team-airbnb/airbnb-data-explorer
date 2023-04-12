@@ -25,16 +25,15 @@ This will launch the app in your default web browser.
 ## Pages
 
 ### Explore Airbnb Data
-
-The "Explore Airbnb Data" page allows users to look at the overall Airbnb data for the four cities. Users can view the average price, minimum nights, and number of reviews for all listings in each city. They can also filter the data by room type and property type.
+The "Explore Airbnb Data" page features a table that allows users to see what the data sourced by InsideAirbnb looks like. Users can also get a deeper dive into several listings.
 
 ### Visualize Each City
 
-The "Visualize Each City" page allows users to dive deeper into each city and view visualizations of the data. Users can view histograms of the price and minimum nights for all listings in each city. They can also view scatter plots of the price vs. number of reviews and the price vs. minimum nights.
+The "Visualize Each City" page provides users with a visual representation of the data for each of the cities we explored.
 
 ### Listing Predictor
 
-The "Listing Predictor" page allows users to input some information about a listing and get a predicted price. Users can input the city, room type, property type, number of bedrooms, number of bathrooms, and number of guests. The app will then use a machine learning model to predict the price of the listing.
+The "Listing Predictor" page allows users to input parameters and receive a price prediction for how much their Airbnb should be priced based on our model. This feature is particularly useful for Airbnb hosts who want to ensure they are pricing their listings appropriately.
 
 ## Data Source
 
